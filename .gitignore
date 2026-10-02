@@ -1,0 +1,14 @@
+# environment files
+.env
+.env.*
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+*.tfvars
+
+# node
+node_modules/
+*.log

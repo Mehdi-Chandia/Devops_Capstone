@@ -1,0 +1,9 @@
+services:
+  backend:
+   build: ./app
+   container_name: capstone-backend
+   ports:
+     - 3000:3000
+   environment:
+     - PORT=3000   
+   
