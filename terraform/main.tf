@@ -40,7 +40,7 @@ resource "aws_instance" "capstone-server" {
 
   vpc_security_group_ids = [aws_security_group.capstone-sg.id]
 
-user_data = templatefile("user_data.sh", {
+user_data = templatefile("installDocker.sh", {
     docker_username = var.docker_username
   })
 
